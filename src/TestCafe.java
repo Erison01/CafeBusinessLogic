@@ -42,8 +42,18 @@ public class TestCafe {
 
         System.out.println("\n----- Overloading Display Menu-----");
 
-        ArrayList<String> menuItems = new ArrayList<String>(Arrays.asList("drip coffee", "cappuccino", "latte", "mocha"));
-        ArrayList<Double> priceItems = new ArrayList<Double>(Arrays.asList(1.50, 3.50, 4.50, 3.50));
+        ArrayList<String> menuItems = new ArrayList<String>();
+        menuItems.add("drip coffee");
+        menuItems.add("cappuccino");
+        menuItems.add("latte");
+        menuItems.add("mocha");
+        
+        ArrayList<Double> priceItems = new ArrayList<Double>();
+        priceItems.add(1.50);
+        priceItems.add(3.50);
+        priceItems.add(4.50);
+        priceItems.add(3.50);
+        
         boolean menuDis = appTest.displayMenu(menuItems,priceItems);
 
         System.out.println("\n----- Add Customers -----");
